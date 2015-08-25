@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>0C430C6D-7B78-4D98-94FC-B8338ABCF6F6</string>
+	<key>IDESourceControlProjectName</key>
+	<string>tongdaoshowforjpus</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>AC6D22FAFE947D8A5E06150BAEA84B7BA3CB7C01</key>
+		<string>gitlab.jarkaslab.com:root/0qian_ios_swift_sdk.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>TongDaoShowJPush/tongdaoshowforjpus.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>AC6D22FAFE947D8A5E06150BAEA84B7BA3CB7C01</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>gitlab.jarkaslab.com:root/0qian_ios_swift_sdk.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>AC6D22FAFE947D8A5E06150BAEA84B7BA3CB7C01</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>AC6D22FAFE947D8A5E06150BAEA84B7BA3CB7C01</string>
+			<key>IDESourceControlWCCName</key>
+			<string>LingQian_ios_swift_sdk</string>
+		</dict>
+	</array>
+</dict>
+</plist>

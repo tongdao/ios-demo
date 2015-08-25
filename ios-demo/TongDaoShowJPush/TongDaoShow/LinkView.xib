@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="LinkView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="255"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="深度链接" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uom-dD-Okr">
+                    <rect key="frame" x="16" y="8" width="60" height="18"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sYr-2a-mAl">
+                    <rect key="frame" x="16" y="34" width="289" height="34"/>
+                    <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <state key="normal" title="demo://page1">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="clickDemoPage:" destination="iN0-l3-epB" eventType="touchUpInside" id="x6K-4Q-dwP"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HHp-vZ-X0I">
+                    <rect key="frame" x="16" y="76" width="289" height="34"/>
+                    <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <state key="normal" title="demo://page2">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="clickDemoPage:" destination="iN0-l3-epB" eventType="touchUpInside" id="Prt-qA-EOO"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TI9-qY-PMI">
+                    <rect key="frame" x="16" y="118" width="289" height="34"/>
+                    <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <state key="normal" title="demo://page3">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="clickDemoPage:" destination="iN0-l3-epB" eventType="touchUpInside" id="RoA-7C-6Aa"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="edR-D9-Ds6">
+                    <rect key="frame" x="16" y="160" width="289" height="34"/>
+                    <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <state key="normal" title="demo://page4">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="clickDemoPage:" destination="iN0-l3-epB" eventType="touchUpInside" id="1XL-0F-1XZ"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KFI-zr-74z">
+                    <rect key="frame" x="16" y="202" width="289" height="34"/>
+                    <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <state key="normal" title="demo://page5">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="clickDemoPage:" destination="iN0-l3-epB" eventType="touchUpInside" id="mVE-jr-qAa"/>
+                    </connections>
+                </button>
+            </subviews>
+            <constraints>
+                <constraint firstItem="Uom-dD-Okr" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="BR5-eC-gqy"/>
+                <constraint firstItem="KFI-zr-74z" firstAttribute="top" secondItem="edR-D9-Ds6" secondAttribute="bottom" constant="8" id="Cup-Z2-nxf"/>
+                <constraint firstItem="edR-D9-Ds6" firstAttribute="top" secondItem="TI9-qY-PMI" secondAttribute="bottom" constant="8" id="Gvt-G9-mx9"/>
+                <constraint firstAttribute="trailing" secondItem="sYr-2a-mAl" secondAttribute="trailing" constant="15" id="Hnz-M5-89Y"/>
+                <constraint firstItem="edR-D9-Ds6" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="Jkn-jj-Rf2"/>
+                <constraint firstItem="HHp-vZ-X0I" firstAttribute="top" secondItem="sYr-2a-mAl" secondAttribute="bottom" constant="8" id="K9z-um-KNH"/>
+                <constraint firstAttribute="trailing" secondItem="edR-D9-Ds6" secondAttribute="trailing" constant="15" id="Qix-Zg-aL9"/>
+                <constraint firstAttribute="trailing" secondItem="TI9-qY-PMI" secondAttribute="trailing" constant="15" id="T9g-jS-fsY"/>
+                <constraint firstItem="Uom-dD-Okr" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="UpJ-tI-P6C"/>
+                <constraint firstItem="sYr-2a-mAl" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="VQ5-6R-bHH"/>
+                <constraint firstAttribute="trailing" secondItem="HHp-vZ-X0I" secondAttribute="trailing" constant="15" id="YeI-u7-7IF"/>
+                <constraint firstAttribute="trailing" secondItem="KFI-zr-74z" secondAttribute="trailing" constant="15" id="eex-Pd-6km"/>
+                <constraint firstItem="sYr-2a-mAl" firstAttribute="top" secondItem="Uom-dD-Okr" secondAttribute="bottom" constant="8" id="jSZ-Xf-RVS"/>
+                <constraint firstItem="TI9-qY-PMI" firstAttribute="top" secondItem="HHp-vZ-X0I" secondAttribute="bottom" constant="8" id="mLU-Q0-OO4"/>
+                <constraint firstItem="KFI-zr-74z" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="ndl-9U-14g"/>
+                <constraint firstItem="TI9-qY-PMI" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="q9K-3j-JAb"/>
+                <constraint firstItem="HHp-vZ-X0I" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="xgk-PY-25B"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="279" y="47"/>
+        </view>
+    </objects>
+</document>
