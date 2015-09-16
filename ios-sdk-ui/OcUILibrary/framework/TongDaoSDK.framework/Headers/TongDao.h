@@ -30,6 +30,26 @@ typedef NS_ENUM(NSUInteger, Gender) {
  */
 +(BOOL)initSdkWithSdk:(NSString*)appKey;
 
+/*
+ 初始化同道服务
+ 
+ :param: appKey 开发者从同道平台获得的AppKey
+ :param: userId 开发者保存的有价值的用户ID
+ 
+ :returns: Bool 同道服务的初始化结果
+ */
++(BOOL)initSdkWithSdk:(NSString *)appKey andUserID:(NSString*)userId;
+
+/**
+ mergae匿名账号和登入的账号
+ 
+ :param: userId 登入的用户名
+ */
++(void)setUserId:(NSString*)userId;
+
+/**
+ 保存DeepLink的键值对
+ */
 +(void)setDeeplinkDictionary:(NSMutableDictionary*)dictionary;
 
 +(NSMutableDictionary*)getDeeplinkDictionary;

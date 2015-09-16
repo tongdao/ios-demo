@@ -8,7 +8,7 @@
 #import <UIKit/UIKit.h>
 #import "TongDaoUiCore.h"
 #import "TdPromotionContainer.h"
-#import "MBProgressHUD.h"
+#import "TongDaoMBProgressHUD.h"
 #import "ViewTool.h"
 #import "TdInAppMessageView.h"
 #import "TdInAppMessageFullView.h"
@@ -51,6 +51,9 @@ static TongDaoUiCore* sharedManager = nil;
     return [TongDao initSdkWithSdk:appKey];
 }
 
+-(BOOL) initSdkWithAppKey:(NSString*) appKey andUserId:(NSString*)userId{
+    return [TongDao initSdkWithSdk:appKey andUserID:userId];
+}
 -(NSString*)generateUserId
 {
     return [TongDao generateUserId];
@@ -107,7 +110,7 @@ static TongDaoUiCore* sharedManager = nil;
     [TongDao identifyFullName:fullName];
 }
 
--(void) identifyPushToken:(NSString *)push_token
+-(void) identifyPushToken:(id)push_token
 {
     [TongDao identifyPushToken:push_token];
 }
@@ -249,11 +252,13 @@ static TongDaoUiCore* sharedManager = nil;
 
 -(void)downloadInAppMessage
 {
+    NSLog(@"在uilab中准备下载");
     [TongDao downloadInAppMessage:self];
 }
 
 -(void)onInAppMessageSuccess:(NSArray * __nonnull)tdMessageBeanList
 {
+    NSLog(@"这是冲API 那来的同道message%@",tdMessageBeanList);
     dispatch_async(dispatch_get_main_queue(), ^{
         self.inAppMsg = tdMessageBeanList;
         [self refreshInAppMessageView];
@@ -289,7 +294,7 @@ static TongDaoUiCore* sharedManager = nil;
         }
         
         
-//        [self addTapClose];
+        //        [self addTapClose];
         
         if (bean.displayTime != nil && bean.displayTime.intValue > 0) {
             long long displaytime = bean.displayTime.intValue * NSEC_PER_SEC;

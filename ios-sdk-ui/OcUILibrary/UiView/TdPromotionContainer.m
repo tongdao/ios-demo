@@ -10,7 +10,7 @@
 #import "ViewTool.h"
 #import "LandingPageView.h"
 #import "TongDaoUiCore.h"
-#import "MBProgressHUD.h"
+#import "TongDaoMBProgressHUD.h"
 
 #import <TongDaoSDK/TongDao.h>
 
@@ -58,7 +58,7 @@ typedef enum
 
 -(void)reloadDataAction
 {
-    [MBProgressHUD showHUDAddedTo:self animated:YES];
+    [TongDaoMBProgressHUD showHUDAddedTo:self animated:YES];
     if (State == UI_Landing_Page) {
         if (PageId != -999) {
             [[TongDaoUiCore sharedManager] downloadPageWithPageId:PageId andDelegate:self];
@@ -129,7 +129,7 @@ typedef enum
 
 -(void) downloadPageWithPageId:(int)pageId
 {
-    [MBProgressHUD showHUDAddedTo:self animated:YES];
+    [TongDaoMBProgressHUD showHUDAddedTo:self animated:YES];
     [self setState:UI_Landing_Page];
     PageId = pageId;
     [[TongDaoUiCore sharedManager] downloadPageWithPageId:pageId andDelegate:self];
@@ -149,7 +149,7 @@ typedef enum
 -(void)onError:(ErrorBean *)errorBean
 {
     dispatch_async(dispatch_get_main_queue(), ^{
-        [MBProgressHUD hideHUDForView:self animated:YES];
+        [TongDaoMBProgressHUD hideHUDForView:self animated:YES];
         PageId = -999;
         [self.backGroundView removeFromSuperview];
         [self removeFromSuperview];
@@ -192,7 +192,7 @@ typedef enum
                                                            delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
         [alertView show];
     }
-    [MBProgressHUD hideHUDForView:self animated:YES];
+    [TongDaoMBProgressHUD hideHUDForView:self animated:YES];
 }
 
 #pragma mark - end landing page

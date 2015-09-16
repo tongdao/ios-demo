@@ -30,6 +30,14 @@
  */
 -(BOOL) initSdkWithAppKey:(NSString*) appKey;
 
+/*!
+ *
+ *@abstract 初始化同道服务
+ *@param appKey 开发者从同道平台获得的AppKey
+ *@param userId 开发者从同道平台获得的AppKey
+ *@return BOOL 同道服务的初始化结果
+ */
+-(BOOL) initSdkWithAppKey:(NSString*) appKey andUserId:(NSString*)userId;
 
 /*!
  *
@@ -115,7 +123,7 @@
 *
 *@param push_token 用户的推送Token
 */
--(void) identifyPushToken:(NSString*)push_token;
+-(void) identifyPushToken:(id)push_token;
 
 /*!
  *@abstract 保存用户名字属性

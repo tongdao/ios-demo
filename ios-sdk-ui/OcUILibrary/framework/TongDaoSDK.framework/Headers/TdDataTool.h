@@ -19,6 +19,10 @@ singleton_interface(TdDataTool)
 
 -(void)saveUuidAndKey:(NSString*)appKey userID:(NSString*)userId;
 
+-(void)saveAnonymous:(BOOL)isAnonymous;
+
+-(BOOL)getAnonymous;
+
 -(NSString*)getAppKey;
 
 -(NSString*)getAppURL;

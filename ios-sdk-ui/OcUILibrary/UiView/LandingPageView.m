@@ -7,7 +7,7 @@
 //
 
 #import "LandingPageView.h"
-#import "MBProgressHUD.h"
+#import "TongDaoMBProgressHUD.h"
 #import "TongDaoUiCore.h"
 #import "ImageLoader.h"
 

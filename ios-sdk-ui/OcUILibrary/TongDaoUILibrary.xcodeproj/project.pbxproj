@@ -21,8 +21,8 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		2A6E631C1B71E68300C2C2BD /* MBProgressHUD.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A6E62DD1B71E68300C2C2BD /* MBProgressHUD.h */; };
-		2A6E631D1B71E68300C2C2BD /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A6E62DE1B71E68300C2C2BD /* MBProgressHUD.m */; };
+		2A6E631C1B71E68300C2C2BD /* TongDaoMBProgressHUD.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A6E62DD1B71E68300C2C2BD /* TongDaoMBProgressHUD.h */; };
+		2A6E631D1B71E68300C2C2BD /* TongDaoMBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A6E62DE1B71E68300C2C2BD /* TongDaoMBProgressHUD.m */; };
 		2A6E633F1B71E68300C2C2BD /* ViewTool.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A6E63011B71E68300C2C2BD /* ViewTool.h */; };
 		2A6E63401B71E68300C2C2BD /* ViewTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A6E63021B71E68300C2C2BD /* ViewTool.m */; };
 		2A6E63411B71E68300C2C2BD /* TongDaoUiCore.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A6E63041B71E68300C2C2BD /* TongDaoUiCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -46,8 +46,8 @@
 /* Begin PBXFileReference section */
 		2A6E62C31B71E57600C2C2BD /* TongDaoUILibrary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TongDaoUILibrary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A6E62C71B71E57600C2C2BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2A6E62DD1B71E68300C2C2BD /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
-		2A6E62DE1B71E68300C2C2BD /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		2A6E62DD1B71E68300C2C2BD /* TongDaoMBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TongDaoMBProgressHUD.h; sourceTree = "<group>"; };
+		2A6E62DE1B71E68300C2C2BD /* TongDaoMBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TongDaoMBProgressHUD.m; sourceTree = "<group>"; };
 		2A6E63011B71E68300C2C2BD /* ViewTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewTool.h; sourceTree = "<group>"; };
 		2A6E63021B71E68300C2C2BD /* ViewTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewTool.m; sourceTree = "<group>"; };
 		2A6E63041B71E68300C2C2BD /* TongDaoUiCore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TongDaoUiCore.h; sourceTree = "<group>"; };
@@ -119,8 +119,8 @@
 			isa = PBXGroup;
 			children = (
 				2AD31C991B7DFE9F000C4A81 /* Singleton.h */,
-				2A6E62DD1B71E68300C2C2BD /* MBProgressHUD.h */,
-				2A6E62DE1B71E68300C2C2BD /* MBProgressHUD.m */,
+				2A6E62DD1B71E68300C2C2BD /* TongDaoMBProgressHUD.h */,
+				2A6E62DE1B71E68300C2C2BD /* TongDaoMBProgressHUD.m */,
 				2A6E63011B71E68300C2C2BD /* ViewTool.h */,
 				2A6E63021B71E68300C2C2BD /* ViewTool.m */,
 				2AD31C951B7DFDE7000C4A81 /* ImageLoader.h */,
@@ -177,7 +177,7 @@
 				2A6E63461B71E68300C2C2BD /* LingqianUILibrary.h in Headers */,
 				2ABC48341B7B545F00942519 /* TdInAppMessageFullView.h in Headers */,
 				2A6E63441B71E68300C2C2BD /* LandingPageView.h in Headers */,
-				2A6E631C1B71E68300C2C2BD /* MBProgressHUD.h in Headers */,
+				2A6E631C1B71E68300C2C2BD /* TongDaoMBProgressHUD.h in Headers */,
 				2A6E633F1B71E68300C2C2BD /* ViewTool.h in Headers */,
 				2A6E63491B71E68300C2C2BD /* TdPromotionContainer.h in Headers */,
 				2A6E63431B71E68300C2C2BD /* TongDaoUiDelegate.h in Headers */,
@@ -272,7 +272,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2A6E631D1B71E68300C2C2BD /* MBProgressHUD.m in Sources */,
+				2A6E631D1B71E68300C2C2BD /* TongDaoMBProgressHUD.m in Sources */,
 				2A6E634A1B71E68300C2C2BD /* TdPromotionContainer.m in Sources */,
 				2AD31C981B7DFDE7000C4A81 /* ImageLoader.m in Sources */,
 				2A6E63451B71E68300C2C2BD /* LandingPageView.m in Sources */,

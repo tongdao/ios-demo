@@ -99,6 +99,8 @@ singleton_interface(TongDaoBridge)
 
 -(void)trackPlaceOrder:(TdOrder*)tdOrder;
 
+-(void)mergeUserId:(NSString*)userId;
+
 -(void)sendOpenMessageWithEventName:(NSString*)eventName andMid:(NSInteger)mid andCid:(NSInteger)cid;
 
 

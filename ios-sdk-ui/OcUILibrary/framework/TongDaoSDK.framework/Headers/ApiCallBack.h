@@ -9,5 +9,5 @@
 #import <Foundation/Foundation.h>
 
 @protocol ApiCallBack <NSObject>
--(void)onResult:(NSHTTPURLResponse*)httpRes data:(id)data sendData:(id)sendData;
+-(void)onResult:(NSHTTPURLResponse*)httpRes data:(NSData*)data sendData:(id)sendData;
 @end

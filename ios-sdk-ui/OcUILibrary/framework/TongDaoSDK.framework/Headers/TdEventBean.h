@@ -10,7 +10,8 @@
 //#define ACTION_TYPE @[@"identify",@"track"]
 typedef enum {
     identify,
-    track
+    track,
+    merge
 }ACTION_TYPE;
 
 

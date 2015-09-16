@@ -18,7 +18,6 @@ singleton_interface(TdService)
 
 @property(atomic)NSArray* failTrackList;
 @property(atomic,assign)BOOL isFailed;
-//@property(atomic)NSMutableArray* sendList;
 
 -(void)sendInitialData;
 
