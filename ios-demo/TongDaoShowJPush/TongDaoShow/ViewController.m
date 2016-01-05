@@ -17,7 +17,7 @@
 #import "BtnViewController.h"
 #import "LinkView.h"
 #import "RewardView.h"
-
+#import "LoginViewController.h"
 const int LEADING_PADDING = 10;
 const int TOP_PADDING = 20;
 
@@ -197,6 +197,11 @@ const int TOP_PADDING = 20;
     };
     
     [self presentViewController:btnVC animated:YES completion:nil];
+}
+- (IBAction)login:(id)sender {
+    NSLog(@"touch");
+    LoginViewController *logVc = [self.storyboard instantiateViewControllerWithIdentifier:@"LoginStoryboard"];
+    [self presentViewController:logVc animated:YES completion:nil];
 }
 
 -(void)updateBtnViewWithTransferBean:(TransferBean*)bean andIndex:(int)index

@@ -28,6 +28,7 @@
 		2A38C54E1B737C670008CD22 /* td_in_app_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 2A38C5491B737C670008CD22 /* td_in_app_icon.png */; };
 		2A38C5511B737CAC0008CD22 /* TongDaoSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A38C54F1B737CAC0008CD22 /* TongDaoSDK.framework */; };
 		2A38C5521B737CAC0008CD22 /* TongDaoUILibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A38C5501B737CAC0008CD22 /* TongDaoUILibrary.framework */; };
+		2A39BCBE1BA28B06002087D6 /* LogSingle.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A39BCBD1BA28B06002087D6 /* LogSingle.m */; };
 		2A740B311AFC5024002F1B77 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A740B301AFC5024002F1B77 /* main.m */; };
 		2A740B341AFC5024002F1B77 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A740B331AFC5024002F1B77 /* AppDelegate.m */; };
 		2A740B371AFC5024002F1B77 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A740B361AFC5024002F1B77 /* ViewController.m */; };
@@ -74,6 +75,7 @@
 		2A8418671B09E5BB00A06DC2 /* 照片@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2A8418521B09E5BB00A06DC2 /* 照片@3x.png */; };
 		2A888AA61B2AB7CB00F905CA /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A888AA51B2AB7CB00F905CA /* Realm.framework */; };
 		2A888AA81B2AB81500F905CA /* Realm.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2A888AA51B2AB7CB00F905CA /* Realm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2AD2715C1BA036330077BE18 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AD2715A1BA036330077BE18 /* LoginViewController.m */; };
 		2AE0C3101B01DE7A005DEC14 /* AddBtnValueView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AE0C30F1B01DE7A005DEC14 /* AddBtnValueView.m */; };
 		2AE0C3121B01E273005DEC14 /* BtnViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AE0C3111B01E273005DEC14 /* BtnViewController.m */; };
 		2AE0C3141B01E45D005DEC14 /* AddBtnValueView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2AE0C3131B01E45D005DEC14 /* AddBtnValueView.xib */; };
@@ -137,6 +139,8 @@
 		2A38C5491B737C670008CD22 /* td_in_app_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = td_in_app_icon.png; sourceTree = "<group>"; };
 		2A38C54F1B737CAC0008CD22 /* TongDaoSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TongDaoSDK.framework; sourceTree = "<group>"; };
 		2A38C5501B737CAC0008CD22 /* TongDaoUILibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TongDaoUILibrary.framework; sourceTree = "<group>"; };
+		2A39BCBC1BA28B06002087D6 /* LogSingle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LogSingle.h; sourceTree = "<group>"; };
+		2A39BCBD1BA28B06002087D6 /* LogSingle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LogSingle.m; sourceTree = "<group>"; };
 		2A740B2B1AFC5024002F1B77 /* tongdaoshowforjpush.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tongdaoshowforjpush.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A740B2F1AFC5024002F1B77 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2A740B301AFC5024002F1B77 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -195,6 +199,8 @@
 		2A8418511B09E5BB00A06DC2 /* 照片@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "照片@2x.png"; sourceTree = "<group>"; };
 		2A8418521B09E5BB00A06DC2 /* 照片@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "照片@3x.png"; sourceTree = "<group>"; };
 		2A888AA51B2AB7CB00F905CA /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Realm.framework; sourceTree = "<group>"; };
+		2AD271591BA036330077BE18 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		2AD2715A1BA036330077BE18 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		2AE0C3091B01CD75005DEC14 /* BtnViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BtnViewController.h; sourceTree = "<group>"; };
 		2AE0C30E1B01DE7A005DEC14 /* AddBtnValueView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddBtnValueView.h; sourceTree = "<group>"; };
 		2AE0C30F1B01DE7A005DEC14 /* AddBtnValueView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddBtnValueView.m; sourceTree = "<group>"; };
@@ -370,6 +376,8 @@
 			children = (
 				2A740B541AFC5771002F1B77 /* DemoTdDataTool.h */,
 				2A740B551AFC5771002F1B77 /* DemoTdDataTool.m */,
+				2A39BCBC1BA28B06002087D6 /* LogSingle.h */,
+				2A39BCBD1BA28B06002087D6 /* LogSingle.m */,
 			);
 			name = Tool;
 			sourceTree = "<group>";
@@ -408,6 +416,8 @@
 				2A076E331AFF3FFD00B2210A /* RewardViewController.h */,
 				2A076E341AFF3FFD00B2210A /* RewardViewController.m */,
 				2AE0C3091B01CD75005DEC14 /* BtnViewController.h */,
+				2AD271591BA036330077BE18 /* LoginViewController.h */,
+				2AD2715A1BA036330077BE18 /* LoginViewController.m */,
 			);
 			name = ViewController;
 			sourceTree = "<group>";
@@ -599,6 +609,7 @@
 				2A3244421B032C5E0030B156 /* TempDataRealm.m in Sources */,
 				2A740B9E1AFC6C43002F1B77 /* TransferRewardBean.m in Sources */,
 				2A076E3B1AFF8E2600B2210A /* RewardView.m in Sources */,
+				2A39BCBE1BA28B06002087D6 /* LogSingle.m in Sources */,
 				2A740B341AFC5024002F1B77 /* AppDelegate.m in Sources */,
 				2AE0C3101B01DE7A005DEC14 /* AddBtnValueView.m in Sources */,
 				2A740B9B1AFC689D002F1B77 /* TransferBean.m in Sources */,
@@ -611,6 +622,7 @@
 				2AE0C3491B020EA5005DEC14 /* UIScrollView+UITouch.m in Sources */,
 				2A740B311AFC5024002F1B77 /* main.m in Sources */,
 				2A2103721AFD91B200AE4EDC /* DemoPage2ViewController.m in Sources */,
+				2AD2715C1BA036330077BE18 /* LoginViewController.m in Sources */,
 				2A2103811AFDC66D00AE4EDC /* LinkView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -749,7 +761,7 @@
 				);
 				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = TongDaoShow/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -777,7 +789,7 @@
 				);
 				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = TongDaoShow/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -889,7 +901,7 @@
 				);
 				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = TongDaoShow/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",

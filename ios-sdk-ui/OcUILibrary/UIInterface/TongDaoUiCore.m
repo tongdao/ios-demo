@@ -49,6 +49,8 @@ static TongDaoUiCore* sharedManager = nil;
 -(BOOL)initSdkWithAppKey:(NSString *)appKey
 {
     return [TongDao initSdkWithSdk:appKey];
+  
+
 }
 
 -(BOOL) initSdkWithAppKey:(NSString*) appKey andUserId:(NSString*)userId{
@@ -252,13 +254,13 @@ static TongDaoUiCore* sharedManager = nil;
 
 -(void)downloadInAppMessage
 {
-    NSLog(@"在uilab中准备下载");
+//    NSLog(@"在uilab中准备下载");
     [TongDao downloadInAppMessage:self];
 }
 
 -(void)onInAppMessageSuccess:(NSArray * __nonnull)tdMessageBeanList
 {
-    NSLog(@"这是冲API 那来的同道message%@",tdMessageBeanList);
+//    NSLog(@"这是冲API 那来的同道message%@",tdMessageBeanList);
     dispatch_async(dispatch_get_main_queue(), ^{
         self.inAppMsg = tdMessageBeanList;
         [self refreshInAppMessageView];

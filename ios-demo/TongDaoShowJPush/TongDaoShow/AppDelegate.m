@@ -10,6 +10,7 @@
 #import <TongDaoUILibrary/TongDaoUiCore.h>
 #import "APService.h"
 #import "DemoTdDataTool.h"
+#import "LogSingle.h"
 #import "DemoPage1ViewController.h"
 #import "DemoPage2ViewController.h"
 #import "DemoPage3ViewController.h"
@@ -176,13 +177,17 @@
         [[TongDaoUiCore sharedManager] openPageForBaiduOrJPush:self.window.rootViewController andUserInfo:userInfo andDeeplinkAndControllerId:linkAndPageDic];
     }
     
-    completionHandler(UIBackgroundFetchResultNewData);
+    completionHandler(44);
 }
 
 - (void)applicationDidBecomeActive:(UIApplication *)application {
     // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
-    [[TongDaoUiCore sharedManager] initSdkWithAppKey:[[DemoTdDataTool sharedManager] getAppKey]];
-    
+//    if ([LogSingle sharedManager].isLogin) {
+         [[TongDaoUiCore sharedManager] initSdkWithAppKey:[[DemoTdDataTool sharedManager] getAppKey]];
+//    }else{
+//        [[TongDaoUiCore sharedManager]initSdkWithAppKey:[[DemoTdDataTool sharedManager] getAppKey]];
+//    }
+   
 //        NSString *registrationId = [APService registrationID];
     NSMutableDictionary* linkAndPageDic=[[NSMutableDictionary alloc] init];
     

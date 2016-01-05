@@ -10,31 +10,31 @@
 	<string>tongdaoshowforjpush</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>AC6D22FAFE947D8A5E06150BAEA84B7BA3CB7C01</key>
-		<string>gitlab.jarkaslab.com:root/0qian_ios_swift_sdk.git</string>
+		<key>D4ED005631E6EBD15F0FA64AFF9C53C99C6265DB</key>
+		<string>https://github.com/pangxiang1992/TongrdSDK.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>TongDaoShowJPush/tongdaoshowforjpush.xcodeproj</string>
+	<string>ios-demo/TongDaoShowJPush/tongdaoshowforjpush.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>AC6D22FAFE947D8A5E06150BAEA84B7BA3CB7C01</key>
-		<string>../../..</string>
+		<key>D4ED005631E6EBD15F0FA64AFF9C53C99C6265DB</key>
+		<string>../../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>gitlab.jarkaslab.com:root/0qian_ios_swift_sdk.git</string>
+	<string>https://github.com/pangxiang1992/TongrdSDK.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>AC6D22FAFE947D8A5E06150BAEA84B7BA3CB7C01</string>
+	<string>D4ED005631E6EBD15F0FA64AFF9C53C99C6265DB</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>AC6D22FAFE947D8A5E06150BAEA84B7BA3CB7C01</string>
+			<string>D4ED005631E6EBD15F0FA64AFF9C53C99C6265DB</string>
 			<key>IDESourceControlWCCName</key>
-			<string>0qian_ios_swift_sdk</string>
+			<string>TongrdSDK</string>
 		</dict>
 	</array>
 </dict>

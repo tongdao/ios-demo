@@ -60,6 +60,9 @@ NSString* const Default_ImageName = @"one.png";
 -(NSString*)getAppKey
 {
     return @"2a11ea4dd40a3deb9120f960f9781ac4";
+    //aac628185392d730e60e74cead8c859b stage
+    //2a11ea4dd40a3deb9120f960f9781ac4 release
+    //17d43b8bf062b6576fff7a368c15be74 entergration
 }
 
 -(void)putTempRewardInfo:(NSString *)sku andNum:(int)num

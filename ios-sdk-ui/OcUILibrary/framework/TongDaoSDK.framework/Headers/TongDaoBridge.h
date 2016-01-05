@@ -23,11 +23,17 @@ singleton_interface(TongDaoBridge)
 
 @property(nonatomic)id<OnErrorListener>onErrorListener;
 @property(nonatomic,strong)NSDate* startTime;
+@property(nonatomic,strong)NSDate* appStartTime;
 @property(nonatomic,copy)NSString* pageNameStart;
 @property(nonatomic,copy)NSString* pageNameEnd;
 @property(nonatomic,strong)NSMutableDictionary* dictionary;
+@property(nonatomic,assign)BOOL appClosed;
 
 -(BOOL)initSdk:(NSString*)appKey;
+
+-(void)openApp;
+
+-(void)closeApp;
 
 -(void)sendEvent:(ACTION_TYPE)action event:(NSString*)event properties:(NSMutableDictionary*)properties;
 

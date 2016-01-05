@@ -154,9 +154,9 @@
     }else if(btn.tag == 1001){
         msgBtnInfo = self.messageBean.buttons[1];
     }
-    NSLog(@"msgBtn--%@",[msgBtnInfo description]);
+//    NSLog(@"msgBtn--%@",[msgBtnInfo description]);
     if (msgBtnInfo != nil) {
-        NSLog(@"msgBtnInfo--%@",msgBtnInfo.actionType);
+//        NSLog(@"msgBtnInfo--%@",msgBtnInfo.actionType);
         if ([msgBtnInfo.actionType isEqualToString:@"deeplink"]) {
             if ([self.tduicore getDeeplinkDictionary] != nil && [self.tduicore getDeeplinkDictionary].count>0) {
                 NSString*storyboardId = [[self.tduicore getDeeplinkDictionary] valueForKey:msgBtnInfo.actionValue];
