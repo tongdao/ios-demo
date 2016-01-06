@@ -28,6 +28,9 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+     [[TongDaoUiCore sharedManager] initSdkWithAppKey:[[DemoTdDataTool sharedManager] getAppKey]];
+    
     _displayedViewController = self.window.rootViewController;
     
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(setDisplayedViewControllerByNotification:) name:DISPLAYED_CONTROLLER object:nil];
@@ -122,13 +125,10 @@
 - (void)applicationDidEnterBackground:(UIApplication *)application {
     // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
     // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
-    // 结束同道服务
-//    [[TongDaoUiCore sharedManager] onSessionEnd:_displayedViewController];
+
     [[NSNotificationCenter defaultCenter] postNotificationName:@"SAVEDATATOBACKGROUND" object:nil];
     [UIApplication sharedApplication].applicationIconBadgeNumber = 0;
     
-    // 结束同道Session
-    [[TongDaoUiCore sharedManager] onSessionEnd:_displayedViewController];
     
 }
 
@@ -145,8 +145,7 @@
 -(void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken{
 
     [APService registerDeviceToken:deviceToken];
-//    NSString *registrationId = [APService registrationID];
-//    [[TongDaoUiCore sharedManager] identifyPushToken:registrationId];
+
     NSLog(@"%@", deviceToken);
 }
 
@@ -182,13 +181,7 @@
 
 - (void)applicationDidBecomeActive:(UIApplication *)application {
     // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
-//    if ([LogSingle sharedManager].isLogin) {
-         [[TongDaoUiCore sharedManager] initSdkWithAppKey:[[DemoTdDataTool sharedManager] getAppKey]];
-//    }else{
-//        [[TongDaoUiCore sharedManager]initSdkWithAppKey:[[DemoTdDataTool sharedManager] getAppKey]];
-//    }
-   
-//        NSString *registrationId = [APService registrationID];
+
     NSMutableDictionary* linkAndPageDic=[[NSMutableDictionary alloc] init];
     
     [linkAndPageDic setValue:@"DemoPage1Storyboard" forKey:@"demojpush://page1"];
@@ -198,7 +191,7 @@
     [linkAndPageDic setValue:@"DemoPage5Storyboard" forKey:@"demojpush://page5"];
     
     [[TongDaoUiCore sharedManager] setDeeplinkDictionary:linkAndPageDic];
-//    [[TongDaoUiCore sharedManager] onSessionStart:_displayedViewController];
+
     NSLog(@"applicationDidBecomeActive");
 }
 

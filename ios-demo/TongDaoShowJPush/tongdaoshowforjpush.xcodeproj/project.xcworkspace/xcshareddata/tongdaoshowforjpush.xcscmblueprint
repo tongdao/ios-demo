@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "7AE3C6EDBD7C1F296CCE6AD55ABD248C34CC8A65",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "7AE3C6EDBD7C1F296CCE6AD55ABD248C34CC8A65" : 0,
+    "D4ED005631E6EBD15F0FA64AFF9C53C99C6265DB" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "FDBEC958-20E5-42F3-AEC2-C417FA9B9CF9",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "7AE3C6EDBD7C1F296CCE6AD55ABD248C34CC8A65" : "ios-demo\/",
+    "D4ED005631E6EBD15F0FA64AFF9C53C99C6265DB" : "TongrdSDK"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "tongdaoshowforjpush",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "ios-demo\/TongDaoShowJPush\/tongdaoshowforjpush.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/tongrd\/ios-demo.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "7AE3C6EDBD7C1F296CCE6AD55ABD248C34CC8A65"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/pangxiang1992\/TongrdSDK.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "D4ED005631E6EBD15F0FA64AFF9C53C99C6265DB"
+    }
+  ]
+}
