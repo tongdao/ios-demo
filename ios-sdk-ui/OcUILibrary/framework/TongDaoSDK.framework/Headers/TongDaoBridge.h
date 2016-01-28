@@ -27,7 +27,6 @@ singleton_interface(TongDaoBridge)
 @property(nonatomic,copy)NSString* pageNameStart;
 @property(nonatomic,copy)NSString* pageNameEnd;
 @property(nonatomic,strong)NSMutableDictionary* dictionary;
-@property(nonatomic,assign)BOOL appClosed;
 
 -(BOOL)initSdk:(NSString*)appKey;
 
