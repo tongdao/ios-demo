@@ -20,6 +20,13 @@ typedef NS_ENUM(NSUInteger, Gender) {
     MALE,
     FEMALE
 };
+typedef NS_ENUM(NSUInteger, TongDaoinitData) {
+    TDLocationIfor,
+    TDDeviceInfor,
+    TDNetworkInfo,
+    TDApplicationInfor,
+    TDNone
+};
 @interface TongDao : NSObject
 /**
  初始化同道服务
@@ -39,6 +46,17 @@ typedef NS_ENUM(NSUInteger, Gender) {
  :returns: Bool 同道服务的初始化结果
  */
 +(BOOL)initSdkWithSdk:(NSString *)appKey andUserID:(NSString*)userId;
+
+/*
+ 初始化同道服务
+ 
+ :param: appKey 开发者从同道平台获得的AppKey
+ :param: userId 开发者保存的有价值的用户ID
+ :param: 
+ 
+ :returns: Bool 同道服务的初始化结果
+ */
++(BOOL)initSdkWithSdk:(NSString *)appKey andUserID:(NSString*)userId andIgnoreParam:(TongDaoinitData)ingnoreInfor;
 
 /**
  mergae匿名账号和登入的账号

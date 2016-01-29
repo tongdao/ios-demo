@@ -41,6 +41,16 @@
 
 /*!
  *
+ *@abstract 初始化同道服务
+ *@param appKey 开发者从同道平台获得的AppKey
+ *@param userId 开发者保存的有价值的用户ID
+ *@param ignoreInfor 开发者可以通过此参数选择忽略SDK采集的一部分信息
+ *@return BOOL 同道服务的初始化结果
+ */
+-(BOOL) initSdkWithAppKey:(NSString*) appKey andUserId:(NSString*)userId andIgnoreInfor:(TongDaoinitData)ignoreInfor;
+
+/*!
+ *
  *@abstract 获得同道SDK产生的userId
  *@return 生成的userId
  */
