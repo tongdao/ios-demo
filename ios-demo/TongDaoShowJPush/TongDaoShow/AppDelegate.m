@@ -27,6 +27,8 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    [self outPutTimeStemp];
+  
     // Override point for customization after application launch.
     
      [[TongDaoUiCore sharedManager] initSdkWithAppKey:[[DemoTdDataTool sharedManager] getAppKey]];
@@ -43,9 +45,19 @@
     
     _displayedViewController = self.window.rootViewController;
 
+    [TongDao trackPlaceOrderWithName:@"name" price:0.55 currency:@"no"];
+    
     return YES;
 }
-
+-(void)outPutTimeStemp{
+    NSDate* newdate = [[NSDate alloc]init];
+    NSDateFormatter* dateFormat = [[NSDateFormatter alloc]init];
+    dateFormat.dateFormat = @"yyyy-MM-dd'T'HH:mm:ss.SSS'Z'";
+    dateFormat.timeZone = [[NSTimeZone alloc]initWithName:@"UTC"];
+    NSLocale *indianLocale = [[NSLocale alloc] initWithLocaleIdentifier:@"en_US"];
+    [dateFormat setLocale:indianLocale];
+    NSLog(@"这是时间戳----%@----%@",[dateFormat stringFromDate:newdate],newdate);
+}
 -(BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation
 {
     return [self displayAdvertisementByDeeplink:url];
@@ -145,7 +157,7 @@
 -(void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken{
 
     [APService registerDeviceToken:deviceToken];
-
+   
     NSLog(@"%@", deviceToken);
 }
 

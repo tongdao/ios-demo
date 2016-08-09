@@ -1,0 +1,57 @@
+
+/* Class = "UILabel"; text = "demo://page2"; ObjectID = "1nc-AB-NM9"; */
+"1nc-AB-NM9.text" = "demo://page2";
+
+/* Class = "UILabel"; text = "深度链接"; ObjectID = "LJz-pO-c2Z"; */
+"LJz-pO-c2Z.text" = "深度链接";
+
+/* Class = "UILabel"; text = "深度链接"; ObjectID = "PVv-Qw-a9W"; */
+"PVv-Qw-a9W.text" = "深度链接";
+
+/* Class = "UIButton"; normalTitle = "LOGOUT"; ObjectID = "QZu-io-hM9"; */
+"QZu-io-hM9.normalTitle" = "LOGOUT";
+
+/* Class = "UILabel"; text = "深度链接"; ObjectID = "Wsg-tM-yHq"; */
+"Wsg-tM-yHq.text" = "深度链接";
+
+/* Class = "UILabel"; text = "登入测试"; ObjectID = "Xgp-LC-veV"; */
+"Xgp-LC-veV.text" = "登入测试";
+
+/* Class = "UILabel"; text = "深度链接"; ObjectID = "YKc-YF-40F"; */
+"YKc-YF-40F.text" = "深度链接";
+
+/* Class = "UIButton"; normalTitle = "USER2  LOGIN"; ObjectID = "YXX-IR-xzr"; */
+"YXX-IR-xzr.normalTitle" = "USER2  LOGIN";
+
+/* Class = "UILabel"; text = "深度链接"; ObjectID = "aHa-d3-yPe"; */
+"aHa-d3-yPe.text" = "深度链接";
+
+/* Class = "UIButton"; normalTitle = "USER1  LOGIN"; ObjectID = "bx0-2T-5RU"; */
+"bx0-2T-5RU.normalTitle" = "USER1  LOGIN";
+
+/* Class = "UILabel"; text = "设置奖品"; ObjectID = "dYh-5f-zy5"; */
+"dYh-5f-zy5.text" = "设置奖品";
+
+/* Class = "UILabel"; text = "demo://page5"; ObjectID = "mrv-WG-eLS"; */
+"mrv-WG-eLS.text" = "demo://page5";
+
+/* Class = "UINavigationItem"; title = "同道演示"; ObjectID = "nV2-aE-LwP"; */
+"nV2-aE-LwP.title" = "同道演示";
+
+/* Class = "UILabel"; text = "demo://page3"; ObjectID = "pGo-ag-gLF"; */
+"pGo-ag-gLF.text" = "demo://page3";
+
+/* Class = "UIButton"; normalTitle = "login"; ObjectID = "qJQ-iS-Lh1"; */
+"qJQ-iS-Lh1.normalTitle" = "login";
+
+/* Class = "UILabel"; text = "同道演示"; ObjectID = "qw8-a1-C6t"; */
+"qw8-a1-C6t.text" = "同道演示";
+
+/* Class = "UILabel"; text = "demo://page4"; ObjectID = "u16-Ds-c0I"; */
+"u16-Ds-c0I.text" = "demo://page4";
+
+/* Class = "UILabel"; text = "定义背景"; ObjectID = "wxt-nt-Vq2"; */
+"wxt-nt-Vq2.text" = "定义背景";
+
+/* Class = "UILabel"; text = "demo://page1"; ObjectID = "zBB-xo-hzo"; */
+"zBB-xo-hzo.text" = "demo://page1";

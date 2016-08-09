@@ -17,6 +17,8 @@
 #import "TdSource.h"
 #import "TdOrderLine.h"
 #import "TdProduct.h"
+#import "TongDao.h"
+
 @interface TongDaoBridge : NSObject
 
 singleton_interface(TongDaoBridge)
@@ -27,8 +29,11 @@ singleton_interface(TongDaoBridge)
 @property(nonatomic,copy)NSString* pageNameStart;
 @property(nonatomic,copy)NSString* pageNameEnd;
 @property(nonatomic,strong)NSMutableDictionary* dictionary;
+@property(nonatomic,assign)BOOL appClosed;
 
 -(BOOL)initSdk:(NSString*)appKey;
+
+-(BOOL)initSdk:(NSString*)appKey andIgnoreParam:(TongDaoinitData)ingnoreInfor;
 
 -(void)openApp;
 

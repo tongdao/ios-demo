@@ -25,6 +25,7 @@ typedef NS_ENUM(NSUInteger, TongDaoinitData) {
     TDDeviceInfor,
     TDNetworkInfo,
     TDApplicationInfor,
+    TDFingerPrintInfor,
     TDNone
 };
 @interface TongDao : NSObject
@@ -52,7 +53,7 @@ typedef NS_ENUM(NSUInteger, TongDaoinitData) {
  
  :param: appKey 开发者从同道平台获得的AppKey
  :param: userId 开发者保存的有价值的用户ID
- :param: 
+ :param: ingnoreInfor 开发者可以屏蔽SDK获取的部分信息
  
  :returns: Bool 同道服务的初始化结果
  */
@@ -64,6 +65,13 @@ typedef NS_ENUM(NSUInteger, TongDaoinitData) {
  :param: userId 登入的用户名
  */
 +(void)setUserId:(NSString*)userId;
+
+/**
+ mergae匿名账号和登入的账号
+ 
+ :param: userId 登入的用户名
+ */
++(void)loginWithUserId:(NSString*)userId;
 
 /**
  保存DeepLink的键值对
@@ -392,6 +400,15 @@ typedef NS_ENUM(NSUInteger, TongDaoinitData) {
  
  */
 +(void)trackOpenPushMessageForBaiduAndJPush:(NSDictionary*)userInfo;
+
+/**
+ 
+ 跟踪用户打开了友盟的推送消息
+ 
+ :param: userInfo 推送消息的附加信息
+ 
+ */
++(void)trackOpenPushMessageForUmeng:(NSDictionary*)userInfo;
 
 /**
  

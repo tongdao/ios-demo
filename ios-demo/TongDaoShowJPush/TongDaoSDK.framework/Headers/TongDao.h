@@ -20,6 +20,14 @@ typedef NS_ENUM(NSUInteger, Gender) {
     MALE,
     FEMALE
 };
+typedef NS_ENUM(NSUInteger, TongDaoinitData) {
+    TDLocationIfor,
+    TDDeviceInfor,
+    TDNetworkInfo,
+    TDApplicationInfor,
+    TDFingerPrintInfor,
+    TDNone
+};
 @interface TongDao : NSObject
 /**
  初始化同道服务
@@ -40,12 +48,30 @@ typedef NS_ENUM(NSUInteger, Gender) {
  */
 +(BOOL)initSdkWithSdk:(NSString *)appKey andUserID:(NSString*)userId;
 
+/*
+ 初始化同道服务
+ 
+ :param: appKey 开发者从同道平台获得的AppKey
+ :param: userId 开发者保存的有价值的用户ID
+ :param: ingnoreInfor 开发者可以屏蔽SDK获取的部分信息
+ 
+ :returns: Bool 同道服务的初始化结果
+ */
++(BOOL)initSdkWithSdk:(NSString *)appKey andUserID:(NSString*)userId andIgnoreParam:(TongDaoinitData)ingnoreInfor;
+
 /**
  mergae匿名账号和登入的账号
  
  :param: userId 登入的用户名
  */
 +(void)setUserId:(NSString*)userId;
+
+/**
+ mergae匿名账号和登入的账号
+ 
+ :param: userId 登入的用户名
+ */
++(void)loginWithUserId:(NSString*)userId;
 
 /**
  保存DeepLink的键值对
@@ -374,6 +400,15 @@ typedef NS_ENUM(NSUInteger, Gender) {
  
  */
 +(void)trackOpenPushMessageForBaiduAndJPush:(NSDictionary*)userInfo;
+
+/**
+ 
+ 跟踪用户打开了友盟的推送消息
+ 
+ :param: userInfo 推送消息的附加信息
+ 
+ */
++(void)trackOpenPushMessageForUmeng:(NSDictionary*)userInfo;
 
 /**
  

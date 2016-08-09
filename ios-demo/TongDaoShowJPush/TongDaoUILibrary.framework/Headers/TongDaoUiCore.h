@@ -345,11 +345,19 @@
   @param userInfo 推送消息的附加信息
  */
 -(void)trackOpenPushMessageForGeTui:(NSDictionary*)userInfo;
+
 /**
  @brief 跟踪用户打开了同道推送消息
  @param userInfo 推送消息的附加信息
  */
 -(void)trackOpenPushMessageForTongDao:(NSDictionary*)userInfo;
+
+/**
+ @brief 跟踪用户打开了同道推送消息
+ @param userInfo 推送消息的附加信息
+ */
+-(void)trackOpenPushMessageForUmeng:(NSDictionary*)userInfo;
+
 /**
   @brief 跟踪用户点击了应用内消息
   @param tdMessageBean 同道返回的TdMessageBean

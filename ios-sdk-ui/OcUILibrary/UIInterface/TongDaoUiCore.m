@@ -384,6 +384,10 @@ static TongDaoUiCore* sharedManager = nil;
     [TongDao trackOpenMesageForTongDaoPush:userInfo];
 }
 
+-(void)trackOpenPushMessageForUmeng:(NSDictionary *)userInfo{
+    [TongDao trackOpenPushMessageForUmeng:userInfo];
+}
+
 -(void)openPageForBaiduOrJPush:(UIViewController*)rootViewController andUserInfo:(NSDictionary*)userInfo andDeeplinkAndControllerId:(NSMutableDictionary*)deeplinkAndControllerId
 {
     
@@ -397,7 +401,7 @@ static TongDaoUiCore* sharedManager = nil;
         return;
     }
     
-    NSLog(@"%@",value);
+//    NSLog(@"%@",value);
     
     //关闭之前打开的ViewController
     if (_displayedViewController != nil) {
@@ -414,7 +418,7 @@ static TongDaoUiCore* sharedManager = nil;
             }
         });
     }else if([type isEqualToString:(@"deeplink")]){
-        NSLog(@"%@",@"coming deeplink");
+//        NSLog(@"%@",@"coming deeplink");
         
         if(deeplinkAndControllerId != nil && [deeplinkAndControllerId count]>0){
             for (NSString *key in deeplinkAndControllerId) {
