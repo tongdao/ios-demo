@@ -56,6 +56,9 @@ static TongDaoUiCore* sharedManager = nil;
 -(BOOL) initSdkWithAppKey:(NSString*) appKey andUserId:(NSString*)userId{
     return [TongDao initSdkWithSdk:appKey andUserID:userId];
 }
+-(BOOL) initTDSdkWithTDAppKey:(NSString*) appKey andUserId:(NSString*)userId{
+    return [TongDao initSdkWithSdk:appKey andUserID:userId andIgnoreParam:TDLocationIfor];
+}
 -(NSString*)generateUserId
 {
     return [TongDao generateUserId];

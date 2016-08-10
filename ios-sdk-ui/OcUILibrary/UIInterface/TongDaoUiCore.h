@@ -41,6 +41,15 @@
 
 /*!
  *
+ *@abstract 初始化同道服务
+ *@param appKey 开发者从同道平台获得的AppKey
+ *@param userId 开发者保存的有价值的用户ID
+ *@return BOOL 同道服务的初始化结果
+ */
+-(BOOL) initTDSdkWithTDAppKey:(NSString*) appKey andUserId:(NSString*)userId;
+
+/*!
+ *
  *@abstract 获得同道SDK产生的userId
  *@return 生成的userId
  */

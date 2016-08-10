@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "TongDaoSDK"
-  s.version      = "3.2.5"
+  s.version      = "3.2.6"
   s.summary      = "同道iOS SDK Cocoa Pods集成库"
 
   s.description  = <<-DESC
@@ -76,7 +76,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/tongrd/ios-demo.git", :tag => "3.2.5" }
+  s.source       = { :git => "https://github.com/tongrd/ios-demo.git", :tag => "3.2.6" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
