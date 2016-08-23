@@ -23,10 +23,6 @@ singleton_interface(TdDataTool)
 
 -(BOOL)getAnonymous;
 
--(void)saveNotificationSwitchStatus:(BOOL)enablePush;
-
--(BOOL)getNotificationSwitchStatus;
-
 -(NSString*)getAppKey;
 
 -(NSString*)getAppURL;
