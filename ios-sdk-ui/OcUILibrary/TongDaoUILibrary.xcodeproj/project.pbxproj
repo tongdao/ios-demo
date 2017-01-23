@@ -41,7 +41,7 @@
 		2AD31C971B7DFDE7000C4A81 /* ImageLoader.h in Headers */ = {isa = PBXBuildFile; fileRef = 2AD31C951B7DFDE7000C4A81 /* ImageLoader.h */; };
 		2AD31C981B7DFDE7000C4A81 /* ImageLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AD31C961B7DFDE7000C4A81 /* ImageLoader.m */; };
 		2AD31C9A1B7DFE9F000C4A81 /* Singleton.h in Headers */ = {isa = PBXBuildFile; fileRef = 2AD31C991B7DFE9F000C4A81 /* Singleton.h */; };
-		5F4A2C8E1E31EF5600EE25B9 /* TongDaoSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F4A2C8D1E31EF5600EE25B9 /* TongDaoSDK.framework */; };
+		509413321E35FD16000CB5D0 /* TongDaoSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5094132F1E35FAEF000CB5D0 /* TongDaoSDK.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -67,7 +67,7 @@
 		2AD31C951B7DFDE7000C4A81 /* ImageLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageLoader.h; sourceTree = "<group>"; };
 		2AD31C961B7DFDE7000C4A81 /* ImageLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageLoader.m; sourceTree = "<group>"; };
 		2AD31C991B7DFE9F000C4A81 /* Singleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Singleton.h; sourceTree = "<group>"; };
-		5F4A2C8D1E31EF5600EE25B9 /* TongDaoSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TongDaoSDK.framework; path = "../../../../Library/Developer/Xcode/DerivedData/tongdaoshowforjpush-fopaaokjrdtrazayxkisqovkavfl/Build/Products/Debug-iphoneos/TongDaoSDK.framework"; sourceTree = "<group>"; };
+		5094132F1E35FAEF000CB5D0 /* TongDaoSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TongDaoSDK.framework; path = "../../../../Library/Developer/Xcode/DerivedData/TongDaoSDK-dbrjtkxsjqujvkgrchztmtqeggxj/Build/Products/Debug-iphoneos/TongDaoSDK.framework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,7 +75,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5F4A2C8E1E31EF5600EE25B9 /* TongDaoSDK.framework in Frameworks */,
+				509413321E35FD16000CB5D0 /* TongDaoSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -170,7 +170,7 @@
 		5F4A2C8C1E31EF5600EE25B9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				5F4A2C8D1E31EF5600EE25B9 /* TongDaoSDK.framework */,
+				5094132F1E35FAEF000CB5D0 /* TongDaoSDK.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
