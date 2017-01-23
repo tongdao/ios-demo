@@ -509,7 +509,7 @@
 		2A740B231AFC5024002F1B77 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0630;
+				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = Lingqian;
 				TargetAttributes = {
 					2A740B2A1AFC5024002F1B77 = {
@@ -673,6 +673,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -682,8 +683,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -691,6 +694,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -717,6 +721,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -726,8 +731,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
@@ -773,6 +780,7 @@
 					"$(SRCROOT)",
 					"$(PROJECT_DIR)",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Tongdao.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = tongdaoshowforjpush;
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "TongDaoShow/Tongdao-Bridging-Header.h";
@@ -802,6 +810,7 @@
 					"$(SRCROOT)",
 					"$(PROJECT_DIR)",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Tongdao.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = tongdaoshowforjpush;
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "TongDaoShow/Tongdao-Bridging-Header.h";
@@ -829,6 +838,7 @@
 					"$(SRCROOT)",
 					"$(PROJECT_DIR)",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Tongdao.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = tongdaoshowforjpushTests;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/tongdaoshowforjpush.app/tongdaoshowforjpush";
 			};
@@ -850,6 +860,7 @@
 					"$(SRCROOT)",
 					"$(PROJECT_DIR)",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Tongdao.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = tongdaoshowforjpushTests;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/tongdaoshowforjpush.app/tongdaoshowforjpush";
 			};
@@ -859,6 +870,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -868,8 +880,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
@@ -915,6 +929,7 @@
 					"$(SRCROOT)",
 					"$(PROJECT_DIR)",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Tongdao.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = tongdaoshowforjpush;
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "TongDaoShow/Tongdao-Bridging-Header.h";
@@ -938,6 +953,7 @@
 					"$(SRCROOT)",
 					"$(PROJECT_DIR)",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Tongdao.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = tongdaoshowforjpushTests;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/tongdaoshowforjpush.app/tongdaoshowforjpush";
 			};

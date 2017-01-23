@@ -100,7 +100,7 @@
         
         if (dict != nil && [dict count]>0) {
             storyboardId=[dict valueForKey:self.messageBean.actionValue];
-            if (storyboardId!=nil&&![storyboardId isEqualToString:@""] ) {
+            if(storyboardId!=nil&&![storyboardId isEqualToString:@""] ) {
                 UIViewController* displayedViewController=[[[[UIApplication sharedApplication].delegate window].rootViewController storyboard] instantiateViewControllerWithIdentifier:storyboardId];
                 
                 if (displayedViewController!=nil) {

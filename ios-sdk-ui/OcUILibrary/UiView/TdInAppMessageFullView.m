@@ -147,16 +147,13 @@
     }
 }
 -(void)goLink:(UIButton*)btn{
-    //    NSMutableArray* buttonBeans = self.messageBean.buttons;
     TdMessageButtonBean* msgBtnInfo = nil;
     if (btn.tag == 1000) {
         msgBtnInfo = self.messageBean.buttons[0];
     }else if(btn.tag == 1001){
         msgBtnInfo = self.messageBean.buttons[1];
     }
-//    NSLog(@"msgBtn--%@",[msgBtnInfo description]);
     if (msgBtnInfo != nil) {
-//        NSLog(@"msgBtnInfo--%@",msgBtnInfo.actionType);
         if ([msgBtnInfo.actionType isEqualToString:@"deeplink"]) {
             if ([self.tduicore getDeeplinkDictionary] != nil && [self.tduicore getDeeplinkDictionary].count>0) {
                 NSString*storyboardId = [[self.tduicore getDeeplinkDictionary] valueForKey:msgBtnInfo.actionValue];

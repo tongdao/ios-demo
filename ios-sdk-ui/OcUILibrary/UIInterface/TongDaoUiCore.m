@@ -257,7 +257,6 @@ static TongDaoUiCore* sharedManager = nil;
 
 -(void)downloadInAppMessage
 {
-//    NSLog(@"在uilab中准备下载");
     [TongDao downloadInAppMessage:self];
 }
 
@@ -403,10 +402,6 @@ static TongDaoUiCore* sharedManager = nil;
     if (type == nil || value == nil) {
         return;
     }
-    
-//    NSLog(@"%@",value);
-    
-    //关闭之前打开的ViewController
     if (_displayedViewController != nil) {
         [_displayedViewController dismissViewControllerAnimated:NO completion:nil];
         _displayedViewController = nil;
@@ -421,8 +416,6 @@ static TongDaoUiCore* sharedManager = nil;
             }
         });
     }else if([type isEqualToString:(@"deeplink")]){
-//        NSLog(@"%@",@"coming deeplink");
-        
         if(deeplinkAndControllerId != nil && [deeplinkAndControllerId count]>0){
             for (NSString *key in deeplinkAndControllerId) {
                 if (key!=nil && deeplinkAndControllerId[key]!=nil) {

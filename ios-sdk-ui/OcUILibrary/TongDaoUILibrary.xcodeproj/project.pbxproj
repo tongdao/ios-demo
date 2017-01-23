@@ -41,6 +41,7 @@
 		2AD31C971B7DFDE7000C4A81 /* ImageLoader.h in Headers */ = {isa = PBXBuildFile; fileRef = 2AD31C951B7DFDE7000C4A81 /* ImageLoader.h */; };
 		2AD31C981B7DFDE7000C4A81 /* ImageLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AD31C961B7DFDE7000C4A81 /* ImageLoader.m */; };
 		2AD31C9A1B7DFE9F000C4A81 /* Singleton.h in Headers */ = {isa = PBXBuildFile; fileRef = 2AD31C991B7DFE9F000C4A81 /* Singleton.h */; };
+		5F4A2C8E1E31EF5600EE25B9 /* TongDaoSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F4A2C8D1E31EF5600EE25B9 /* TongDaoSDK.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -66,6 +67,7 @@
 		2AD31C951B7DFDE7000C4A81 /* ImageLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageLoader.h; sourceTree = "<group>"; };
 		2AD31C961B7DFDE7000C4A81 /* ImageLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageLoader.m; sourceTree = "<group>"; };
 		2AD31C991B7DFE9F000C4A81 /* Singleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Singleton.h; sourceTree = "<group>"; };
+		5F4A2C8D1E31EF5600EE25B9 /* TongDaoSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TongDaoSDK.framework; path = "../../../../Library/Developer/Xcode/DerivedData/tongdaoshowforjpush-fopaaokjrdtrazayxkisqovkavfl/Build/Products/Debug-iphoneos/TongDaoSDK.framework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5F4A2C8E1E31EF5600EE25B9 /* TongDaoSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,6 +91,7 @@
 				2A6E630F1B71E68300C2C2BD /* framework */,
 				2A6E62C51B71E57600C2C2BD /* TongDaoUILibrary */,
 				2A6E62C41B71E57600C2C2BD /* Products */,
+				5F4A2C8C1E31EF5600EE25B9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -161,6 +165,14 @@
 				2A6E63101B71E68300C2C2BD /* TongDaoSDK.framework */,
 			);
 			path = framework;
+			sourceTree = "<group>";
+		};
+		5F4A2C8C1E31EF5600EE25B9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5F4A2C8D1E31EF5600EE25B9 /* TongDaoSDK.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -378,6 +390,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				"OTHER_CFLAGS[arch=*]" = "";
 				SDKROOT = iphoneos;
 			};
 			name = Release;
@@ -403,6 +416,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				VALID_ARCHS = "armv7 armv7s";
 				WRAPPER_EXTENSION = framework;
 			};
 			name = Debug;
@@ -428,6 +442,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				VALID_ARCHS = "armv7 armv7s";
 				WRAPPER_EXTENSION = framework;
 			};
 			name = Release;
